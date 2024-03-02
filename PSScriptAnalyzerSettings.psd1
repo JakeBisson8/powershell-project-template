@@ -2,6 +2,7 @@
     ExcludeRules = @(
         'PSUseApprovedVerbs',
         'PSUseSingularNouns',
-        'PSAvoidUsingWriteHost'
+        'PSAvoidUsingWriteHost',
+        'PSReviewUnusedParameter'
     )
 }
