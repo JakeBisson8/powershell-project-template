@@ -2,7 +2,10 @@
   "name": "powershell-project-template",
   "version": "1.0.0",
   "description": "A basic starter template for a PowerShell project.",
-  "main": "index.js",
+  "repository": "github:JakeBisson8/powershell-project-template",
+  "keywords": [
+    "powershell"
+  ],
   "scripts": {
     "test": "powershell.exe Invoke-Pester",
     "test:detailed": "powershell.exe Invoke-Pester -Output Detailed",
@@ -12,7 +15,7 @@
     "lint:staged:fix": "powershell.exe ./RunScriptAnalyzer.ps1 -Includes @(git diff --staged --name-only) -Fix",
     "prepare": "husky"
   },
-  "author": "Jake Bisson",
+  "author": "Jake Bisson (https://github.com/JakeBisson8)",
   "license": "MIT",
   "devDependencies": {
     "husky": "^9.0.11"
