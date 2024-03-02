@@ -4,6 +4,8 @@
   "description": "A basic starter template for a PowerShell project.",
   "main": "index.js",
   "scripts": {
+    "test": "powershell.exe Invoke-Pester",
+    "test:detailed": "powershell.exe Invoke-Pester -Output Detailed",
     "lint": "powershell.exe ./RunScriptAnalyzer.ps1",
     "lint:fix": "powershell.exe ./RunScriptAnalyzer.ps1 -Fix",
     "lint:staged": "powershell.exe ./RunScriptAnalyzer.ps1 -Includes @(git diff --staged --name-only)",
